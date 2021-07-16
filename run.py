@@ -19,7 +19,8 @@ def start(updater, context):
 	context.bot.send_message(chat_id=updater.effective_chat.id, text="""Hi
 		welcom to BITCOIN PRICE bot 
 		while you type or click on /price
-		i will send you price of BTC at this time.""")
+		i will send you price of BTC at this time
+		source code: https://github.com/iamjavad/btc_price_telegram_bot.""")
 
 start_handler = CommandHandler('start', start)
 dispatcher.add_handler(start_handler)
