@@ -29,7 +29,7 @@ def price(updater, context):
 	
 	x = str(datetime.datetime.now())[0:16]
 	
-	context.bot.send_message(chat_id=updater.effective_chat.id, text="BITCOINE PRICE: " + price + " USD " + ' \n DATE: ' + x)
+	context.bot.send_message(chat_id=updater.effective_chat.id, text="BITCOINE PRICE: " + price + " USD 💲" + ' \n DATE: ' + x)
 price_handler = CommandHandler('price', price)
 dispatcher.add_handler(price_handler)
 
