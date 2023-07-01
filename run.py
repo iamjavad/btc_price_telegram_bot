@@ -14,7 +14,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 		level=logging.INFO)
 
 def start(updater, context):
-	context.bot.send_message(chat_id=updater.effective_chat.id, text="""Hi\nwelcom to BITCOIN PRICE bot \ntype or click on /price\ni will send you BTC price\nsource code: https://github.com/iamjavad/btc_price_telegram_bot.""")
+	context.bot.send_message(chat_id=updater.effective_chat.id, text="""Hi\nwelcom to BITCOIN PRICE bot \ntype or click on /price\ni will send you BTC price\nsource code: https://github.com/ja74d/btc_price_telegram_bot.""")
 
 start_handler = CommandHandler('start', start)
 dispatcher.add_handler(start_handler)
